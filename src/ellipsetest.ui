@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EllipseTest</class>
+ <widget class="QWidget" name="EllipseTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGraphicsView" name="graphicsView"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="CustomWidget" name="widget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>150</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="2">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Arrow angle (deg)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QDoubleSpinBox" name="arrow_angle_doubleSpinBox">
+       <property name="minimum">
+        <double>-720.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>720.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>5.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Ellipse x</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDoubleSpinBox" name="ellipse_x_doubleSpinBox">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>20.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Ellipse y</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDoubleSpinBox" name="ellipse_y_doubleSpinBox">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>10.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Ellipse rot (deg)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="ellipse_rot_doubleSpinBox">
+       <property name="minimum">
+        <double>-720.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>720.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>5.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="arrow_scale_doubleSpinBox">
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>10.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Scale</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Aperture</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="aperture_doubleSpinBox">
+       <property name="maximum">
+        <double>360.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CustomWidget</class>
+   <extends>QWidget</extends>
+   <header>src/customwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
