@@ -3,13 +3,14 @@
 
 #include <QWidget>
 #include "ellipseitem.h"
+#include "ellipse_test_exports.h"
 
 namespace Ui
 {
 class EllipseTest;
 }
 
-class EllipseTest : public QWidget
+class ELLIPSE_TEST_EXPORT EllipseTest : public QWidget
 {
   Q_OBJECT
 

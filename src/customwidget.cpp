@@ -1,7 +1,8 @@
-#include "customwidget.h"
-
-#include <QPainter>
+#define _USE_MATH_DEFINES
 #include <cmath>
+
+#include "customwidget.h"
+#include <QPainter>
 
 CustomWidget::CustomWidget(QWidget *parent) : QWidget(parent)
 {

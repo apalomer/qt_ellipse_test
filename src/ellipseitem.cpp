@@ -1,6 +1,7 @@
-#include "ellipseitem.h"
-
+#define _USE_MATH_DEFINES
 #include <cmath>
+
+#include "ellipseitem.h"
 
 #include <QDebug>
 #include <QPainter>

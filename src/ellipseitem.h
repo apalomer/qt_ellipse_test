@@ -2,8 +2,9 @@
 #define ELLIPSEITEM_H
 
 #include <QAbstractGraphicsShapeItem>
+#include "ellipse_test_exports.h"
 
-class EllipseItem : public QAbstractGraphicsShapeItem
+class ELLIPSE_TEST_EXPORT EllipseItem : public QAbstractGraphicsShapeItem
 {
 public:
   double ellipse_x;

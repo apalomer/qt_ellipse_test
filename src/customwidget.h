@@ -2,8 +2,9 @@
 #define CUSTOMWIDGET_H
 
 #include <QWidget>
+#include "ellipse_test_exports.h"
 
-class CustomWidget : public QWidget
+class ELLIPSE_TEST_EXPORT CustomWidget : public QWidget
 {
   Q_OBJECT
 public:
