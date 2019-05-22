@@ -2,7 +2,7 @@
 cmake_minimum_required (VERSION 3.0)
 project (test_elipse CXX C)
 if (WIN32)
-  add_compile_options(-std:c++17)
+  add_compile_options(/std:c++17)
 else ()
   add_compile_options(-std=c++17 -Wall -Wextra)
 endif()
